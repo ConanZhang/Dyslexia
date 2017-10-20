@@ -6,10 +6,17 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: blend_root
+    100004: stapler:pCube1
     400000: //RootNode
+    400002: blend_root
+    400004: stapler:pCube1
     2300000: //RootNode
+    2300002: stapler:pCube1
     3300000: //RootNode
+    3300002: stapler:pCube1
     4300000: pCube1
+    4300002: stapler:pCube1
     9500000: //RootNode
   materials:
     importMaterials: 1
