@@ -45,7 +45,7 @@ MonoBehaviour:
       intensity: 1.25
       radius: 0.3
       sampleCount: 10
-      downsampling: 1
+      downsampling: 0
       forceForwardCompatibility: 0
       ambientOnly: 0
       highPrecision: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 2.1
+        intensity: 1.94
         threshold: 1.1
         softKnee: 0.5
         radius: 4
