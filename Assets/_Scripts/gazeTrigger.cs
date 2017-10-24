@@ -21,8 +21,8 @@ public class gazeTrigger : MonoBehaviour {
 
 	int _tempIndex = 0;
 
-	GameObject _whiteboard;
-	TextMesh[] _textMesh = new TextMesh[4];
+	GameObject[] _whiteboard;
+	TextMesh[] _textMesh;
 	string[] original = new string[4];
 	string copy;
 	string word ="";
@@ -36,11 +36,15 @@ public class gazeTrigger : MonoBehaviour {
 
 	void Start () {
 		difficulty = "easy";
-		_whiteboard = GameObject.FindWithTag ("board");
-		_textMesh = _whiteboard.GetComponentsInChildren<TextMesh>(true);
-		for (int i = 0; i < _textMesh.Length; i++) {
-			original [i] = _textMesh [i].text;
-		}
+		_whiteboard = GameObject.FindGameObjectsWithTag("JumbleText");
+
+        original = new string[_whiteboard.Length];
+        _textMesh = new TextMesh[_whiteboard.Length];
+
+        for (int i = 0; i < _whiteboard.Length; i++) {
+            _textMesh[i] = _whiteboard[i].GetComponent<TextMesh>();
+            original [i] = _textMesh [i].text;
+        }
 
 	}
 	
