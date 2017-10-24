@@ -971,7 +971,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d07df7465a9ef7b4f8866c95f5200ead, type: 3}
+  - {fileID: 2100000, guid: cc84123221f8ad24383cba3e1c1d8bf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1852,7 +1852,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d07df7465a9ef7b4f8866c95f5200ead, type: 3}
+  - {fileID: 2100000, guid: cc84123221f8ad24383cba3e1c1d8bf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3300,6 +3300,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 16.1, y: 66.8, z: 0}
+--- !u!1 &1693778403 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: f755480e3ffc6b945bc13f7b7f7d4f3a, type: 3}
+  m_PrefabInternal: {fileID: 918961442}
+--- !u!65 &1693778404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1693778403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3135.6016, y: 100, z: 3547.2422}
+  m_Center: {x: -0.000045776367, y: -870.1, z: 0}
 --- !u!1 &1699784535 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 113768, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
