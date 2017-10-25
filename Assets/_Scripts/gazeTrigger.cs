@@ -31,7 +31,6 @@ public class gazeTrigger : MonoBehaviour {
 	float flipTime = 2f;
 	string difficulty;
 	bool[] makeRandom = {true, true, true, true};
-	string[] tag = { "board0", "board1", "board2", "board3" };
 	int _activeIndex;
 
 	void Start () {
@@ -51,6 +50,7 @@ public class gazeTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate()
 	{
+		Debug.Log ("Start");
 		Time deltaTime;
 		string s = "";
 		int i = 0;
@@ -61,7 +61,7 @@ public class gazeTrigger : MonoBehaviour {
 				_activeIndex = i;
 				i++;
 				string tag = _currentMesh.tag;
-				//print (tag);
+				print (_currentMesh.text);
 				if (makeRandom [_activeIndex]) {
 					StartRandom (_currentMesh);
 				}

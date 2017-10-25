@@ -16,7 +16,7 @@ public class TeleportClock : MonoBehaviour {
 	void Update () {
 		//Debug.Log ("time: "+Time.time);
 		if (Time.time > teleportTime) {
-			Debug.Log(transform.localPosition.x);
+			//Debug.Log(transform.localPosition.x);
 //			transform.Rotate (0, 0, Time.deltaTime*600);
 			//transform.SetPositionAndRotation(Vector3(450, transform.position.y, transform.position.z), transform.localRotation);
 			if (flip) {
@@ -31,7 +31,7 @@ public class TeleportClock : MonoBehaviour {
 			}
 
 
-			Debug.Log(transform.localPosition.x);
+		//	Debug.Log(transform.localPosition.x);
 			teleportTime += 10f;
 		}
 
