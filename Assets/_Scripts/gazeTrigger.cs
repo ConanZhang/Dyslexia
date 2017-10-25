@@ -19,30 +19,33 @@ public class gazeTrigger : MonoBehaviour {
 	char[] similar6 = { 'T', 'I', 'L' };
 	char[] similar7 = { 'V', 'A'};
 
-	int _tempIndex = 0;
+	public int _tempIndex = 0;
 
 	GameObject[] _whiteboard;
 	TextMesh[] _textMesh;
 	string[] original = new string[4];
 	string copy;
-	string word ="";
 	float x, y, z;
 	float jumbleTime = 0.5f;
 	float flipTime = 2f;
 	string difficulty;
 	bool[] makeRandom = {true, true, true, true};
 	int _activeIndex;
+	bool check = true;
 
 	void Start () {
 		difficulty = "easy";
+
 		_whiteboard = GameObject.FindGameObjectsWithTag("JumbleText");
 
         original = new string[_whiteboard.Length];
         _textMesh = new TextMesh[_whiteboard.Length];
+		string[] name = new string[_whiteboard.Length];
 
         for (int i = 0; i < _whiteboard.Length; i++) {
             _textMesh[i] = _whiteboard[i].GetComponent<TextMesh>();
             original [i] = _textMesh [i].text;
+			name [i] = _textMesh [i].name;
         }
 
 	}
@@ -50,18 +53,19 @@ public class gazeTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		Debug.Log ("Start");
-		Time deltaTime;
-		string s = "";
+		//Debug.Log ("Start");
+
 		int i = 0;
 		Vector3 fwd = transform.TransformDirection (Vector3.forward)*10;
 		Debug.DrawRay(transform.position, fwd, Color.green);
 		if (Time.time > jumbleTime) {
 			foreach (TextMesh _currentMesh in _textMesh) {
 				_activeIndex = i;
-				i++;
+				//i++;
+				check = true;
 				string tag = _currentMesh.tag;
-				print (_currentMesh.text);
+				tag = tag + _activeIndex;
+				//print (_currentMesh.tag);
 				if (makeRandom [_activeIndex]) {
 					StartRandom (_currentMesh);
 				}
@@ -72,10 +76,22 @@ public class gazeTrigger : MonoBehaviour {
 				}
 
 				if (Physics.Raycast (transform.position, fwd, out hit)) {
-					if (hit.collider && hit.collider.tag == _currentMesh.tag) {
+					//print (hit.collider.tag);
+					if (hit.collider && hit.collider.name == _currentMesh.name) {
+						
+						Debug.Log ("equal_" + hit.collider.name);
+
+//						string tem = hit.collider.GetComponent<TextMesh> ().text;
+//						foreach(char c in original[i]) {
+//							if (hit.collider.GetComponent<TextMesh> ().text.IndexOf (c) == -1) {
+//								check = false;
+//							}
+//						}
+						Debug.Log (hit.collider.GetComponent<TextMesh> ().text);
 						StartCoroutine(CallCollisionCheck(_activeIndex));
 					}
 				}
+				i++;
 			}
 			jumbleTime += 1f;
 			i = 0;
@@ -91,38 +107,24 @@ public class gazeTrigger : MonoBehaviour {
 		print (i_index);
 		Vector3 fwd2 = transform.TransformDirection (Vector3.forward);
 			if (Physics.Raycast (transform.position, fwd2, out hit)) {
-			if (hit.collider && hit.collider.tag == "board"+i_index) {
+			if (hit.collider && hit.collider.tag == "JumbleText") {
 				makeRandom[i_index] = false;
-					_textMesh[i_index].text = original[i_index];
-					print ("After dealy");
+				_textMesh[i_index].text = original[i_index];
+				print ("After dealy"+ _tempIndex + makeRandom[i_index]);
 				}
 			}
 	
 	}
-	void StartRandom(TextMesh i_mesh)	{
-		TextMesh o_text = i_mesh;
-		//print (o_text.text);
-		string word = "";
-		string randomText = "";
-		string s = o_text.text;
-		s += " ";
+					
 
-			//Debug.Log (s);
-			for (int i = 0; i < s.Length; i++) { 
-				if (s [i] == ' ') {
-					if (randomText.Length != 0)
-						randomText += ' ';
-					randomText += RandomText (word, difficulty);
-					word = "";
-				} else {
-					word += s [i];
-				}
-			}
-			randomText = SimilarWords (randomText);
-			i_mesh.text = randomText;		
+	public void StartRandom(TextMesh i_mesh)	{
+		string randomText = RandomText (i_mesh.text, difficulty);
+		randomText = SimilarWords (randomText);
+		i_mesh.text = randomText;		
+
 	}
 
-	string RandomText(string word, string difficulty)	{
+	public string RandomText(string word, string difficulty)	{
 
 		string random = "";
 
