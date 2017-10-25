@@ -11,7 +11,7 @@ public class HourHand : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(transform.localRotation.x);
-		transform.Rotate (0, 0, Time.deltaTime/100);
+		//Debug.Log(transform.localRotation.x);
+		transform.Rotate (0, 0, Time.deltaTime*6);
 	}
 }

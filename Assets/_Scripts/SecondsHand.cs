@@ -11,7 +11,7 @@ public class SecondsHand : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(transform.localRotation.x);
+		//Debug.Log(transform.localRotation.x);
 		transform.Rotate (0, 0, Time.deltaTime*600);
 	}
 }
