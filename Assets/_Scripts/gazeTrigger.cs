@@ -29,7 +29,7 @@ public class gazeTrigger : MonoBehaviour {
 	float jumbleTime = 0.5f;
 	float flipTime = 2f;
 	string difficulty;
-	bool[] makeRandom = {true, true, true, true};
+	bool[] makeRandom;// = {true, true, true, true};
 	int _activeIndex;
 	bool check = true;
 
@@ -41,11 +41,13 @@ public class gazeTrigger : MonoBehaviour {
         original = new string[_whiteboard.Length];
         _textMesh = new TextMesh[_whiteboard.Length];
 		string[] name = new string[_whiteboard.Length];
+		makeRandom = new bool[_whiteboard.Length];
 
         for (int i = 0; i < _whiteboard.Length; i++) {
             _textMesh[i] = _whiteboard[i].GetComponent<TextMesh>();
             original [i] = _textMesh [i].text;
 			name [i] = _textMesh [i].name;
+			makeRandom [i] = true;
         }
 
 	}
