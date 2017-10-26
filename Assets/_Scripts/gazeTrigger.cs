@@ -34,7 +34,7 @@ public class gazeTrigger : MonoBehaviour {
 	bool check = true;
 
 	void Start () {
-		difficulty = "easy";
+		difficulty = "hard";
 
 		_whiteboard = GameObject.FindGameObjectsWithTag("JumbleText");
 
@@ -80,8 +80,6 @@ public class gazeTrigger : MonoBehaviour {
 				if (Physics.Raycast (transform.position, fwd, out hit)) {
 					//print (hit.collider.tag);
 					if (hit.collider && hit.collider.name == _currentMesh.name) {
-						
-						Debug.Log ("equal_" + hit.collider.name);
 
 //						string tem = hit.collider.GetComponent<TextMesh> ().text;
 //						foreach(char c in original[i]) {
@@ -148,7 +146,7 @@ public class gazeTrigger : MonoBehaviour {
 			for (int i = 0; i < word.Length; i++)
 			{
 				int temp = medium[i];
-				while (temp > word.Length)
+				while (temp > word.Length - 1)
 					temp--;
 				random += word[temp];
 			}
@@ -158,7 +156,7 @@ public class gazeTrigger : MonoBehaviour {
 			for (int i = 0; i < word.Length; i++)
 			{
 				int temp = hard[i];
-				while (temp > word.Length)
+				while (temp > word.Length - 1)
 					temp--;
 				random += word[temp];
 			}
