@@ -9,7 +9,7 @@ public class TeleportClock : MonoBehaviour {
 	float initialXPos;
 	bool flip = true;
 	void Start () {
-		initialXPos = transform.localRotation.x;
+		initialXPos = transform.localPosition.x;
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,7 @@ public class TeleportClock : MonoBehaviour {
 		if (Time.time > teleportTime) {
 			//Debug.Log(transform.localPosition.x);
 //			transform.Rotate (0, 0, Time.deltaTime*600);
+			Debug.Log(initialXPos);
 			//transform.SetPositionAndRotation(Vector3(450, transform.position.y, transform.position.z), transform.localRotation);
 			if (flip) {
 				transform.localPosition = new Vector3(-300f, transform.localPosition.y, transform.localPosition.z);
@@ -28,6 +29,7 @@ public class TeleportClock : MonoBehaviour {
 				transform.localPosition = new Vector3(initialXPos, transform.localPosition.y, transform.localPosition.z);
 				transform.RotateAround (transform.position, Vector3.up, 180f);
 				flip = true;
+
 			}
 
 
