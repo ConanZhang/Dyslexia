@@ -1,17 +1,20 @@
 fileFormatVersion: 2
-guid: 42da832a76eaae14b85df110b8ce28ce
-timeCreated: 1469087502
-licenseType: Store
+guid: e2612c1f483253f438f2f081d4d44503
+timeCreated: 1509573932
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: TexturedDisk
+    100002: polySurface1
     400000: //RootNode
-    400002: TexturedDisk
-    2300000: TexturedDisk
-    3300000: TexturedDisk
-    4300000: TexturedDisk
+    400002: polySurface1
+    2300000: polySurface1
+    2300002: //RootNode
+    3300000: polySurface1
+    3300002: //RootNode
+    4300000: polySurface1
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,10 +45,10 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -61,7 +64,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -79,9 +82,9 @@ ModelImporter:
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
