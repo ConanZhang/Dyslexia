@@ -9,6 +9,7 @@
 		Lighting Off Cull Back ZWrite Off Fog { Mode Off }
 		Blend SrcAlpha OneMinusSrcAlpha
 		Pass {
+			Offset -1, -1
 			Color [_Color]
 			SetTexture [_MainTex] {
 				combine primary, texture * primary
