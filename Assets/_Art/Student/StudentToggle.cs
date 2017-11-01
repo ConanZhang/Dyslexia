@@ -13,6 +13,8 @@ public class StudentToggle : MonoBehaviour {
     void Start()
     {
         m = gameObject.GetComponent<Animator>();
+        AnimatorStateInfo state = m.GetCurrentAnimatorStateInfo(0);
+        m.Play(state.fullPathHash, -1, Random.Range(0f, 1f));
 
         idle = false;
         read = false;
