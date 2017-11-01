@@ -5,24 +5,38 @@ using UnityEngine;
 public class Walk : MonoBehaviour {
 
 	Transform m;
-	Collider c;
+	Collider teacher;
+	Collider box;
+	bool move = true;
+	bool rotate = true;
 	public float speed = 100f;
+	Animator animator;
+	bool walk;
+
 	// Use this for initialization
 	void Start () {
 		m = gameObject.GetComponent<Transform>();
-		c = gameObject.GetComponent<Collider> ();
+		teacher = gameObject.GetComponent<Collider>();
+		box = GameObject.FindGameObjectWithTag ("trashcan").GetComponent<Collider> ();
+		animator = gameObject.GetComponent<Animator>();
+		//animator.SetBool ("walk", true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		print (m.name);
-		//transform.localPosition.Set (m.localPosition.x+1, m.localPosition.y, m.localPosition.z);
-
-		//transform.position = new Vector3 (0, 0, 0);
-
-		transform.Translate (-Time.deltaTime/2, 0, Time.deltaTime/15, Camera.main.transform);
-
-		print (c.isTrigger);
+		if (move)  {
+			animator.SetBool ("walk", true);
+			transform.Translate (-Time.deltaTime / 2, 0, Time.deltaTime / 15, Camera.main.transform);
 		}
-}
+		else if (rotate)  {
+			transform.Rotate (0, -90, 0);
+			rotate = false;
+		}
+			
+
+		if (teacher.bounds.Intersects (box.bounds)) {
+			move = false;
+			animator.SetBool ("walk", false);
+			}
+		}
+	}
