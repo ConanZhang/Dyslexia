@@ -18,6 +18,9 @@ public class gazeTrigger : MonoBehaviour {
 	char[] similar5 = { 'E', 'F'};
 	char[] similar6 = { 'T', 'I', 'L' };
 	char[] similar7 = { 'V', 'A'};
+	char[] similar8 = { '0', '9', '6', '8', '3' };
+	char[] similar9 = { '1', '7', '4' };
+	char[] similar10 = { '2', '5' };
 
 	public int _tempIndex = 0;
 
@@ -211,6 +214,21 @@ public class gazeTrigger : MonoBehaviour {
 			{
 				randomNumber = Random.Range(0, similar7.Length - 1);
 				word = word.Replace(word[i], similar7[randomNumber]);
+			}
+			else if (System.Array.IndexOf(similar8, word[i]) != -1)
+			{
+				randomNumber = Random.Range(0, similar8.Length - 1);
+				word = word.Replace(word[i], similar8[randomNumber]);
+			}
+			else if (System.Array.IndexOf(similar9, word[i]) != -1)
+			{
+				randomNumber = Random.Range(0, similar9.Length - 1);
+				word = word.Replace(word[i], similar9[randomNumber]);
+			}
+			else if (System.Array.IndexOf(similar10, word[i]) != -1)
+			{
+				randomNumber = Random.Range(0, similar10.Length - 1);
+				word = word.Replace(word[i], similar10[randomNumber]);
 			}
 		}
 		return word;
