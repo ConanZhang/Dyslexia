@@ -5,20 +5,24 @@ using UnityEngine;
 public class Walk : MonoBehaviour {
 
 	Transform m;
+	Collider c;
 	public float speed = 100f;
 	// Use this for initialization
 	void Start () {
 		m = gameObject.GetComponent<Transform>();
+		c = gameObject.GetComponent<Collider> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		speed = speed * Time.deltaTime*10;
-		print (m.localPosition);
-//		m.transform.position = Vector3.MoveTowards (new Vector3 (m.transform.localPosition.x, m.transform.localPosition.y, m.transform.localPosition.z),
-//						new Vector3 (0f, 0f, 0f), speed);
 
-		m.localPosition.Set (0f, 0f, 0f);
-		print (m.localPosition);
+		print (m.name);
+		//transform.localPosition.Set (m.localPosition.x+1, m.localPosition.y, m.localPosition.z);
+
+		//transform.position = new Vector3 (0, 0, 0);
+
+		transform.Translate (-Time.deltaTime/2, 0, Time.deltaTime/15, Camera.main.transform);
+
+		print (c.isTrigger);
 		}
 }
