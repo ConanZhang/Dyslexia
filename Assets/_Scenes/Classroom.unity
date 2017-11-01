@@ -1001,8 +1001,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.67, z: 0.18}
-  m_Center: {x: -0.2940005, y: 0.13800192, z: -0.00000026416782}
+  m_Size: {x: 0.2, y: 0.13, z: 0.18}
+  m_Center: {x: -0.07, y: 0.03, z: -0.00000026416782}
 --- !u!1 &233670158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,8 +3278,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.67, z: 0.18}
-  m_Center: {x: -0.2940005, y: 0.13800192, z: -0.00000026416782}
+  m_Size: {x: 0.1, y: 0.14, z: 0.18}
+  m_Center: {x: -0.04, y: 0.02, z: -0.00000026416782}
 --- !u!102 &697656234
 TextMesh:
   serializedVersion: 3
@@ -4460,8 +4460,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.67, z: 0.18}
-  m_Center: {x: -0.2940005, y: 0.13800192, z: -0.00000026416782}
+  m_Size: {x: 0.21, y: 0.11, z: 0.18}
+  m_Center: {x: -0.09, y: 0.05, z: -0.00000026416782}
 --- !u!102 &940815809
 TextMesh:
   serializedVersion: 3
@@ -5242,8 +5242,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.67, z: 0.18}
-  m_Center: {x: -0.2940005, y: 0.13800192, z: -0.00000026416782}
+  m_Size: {x: 0.61, y: 0.28, z: 0.6}
+  m_Center: {x: -0.16, y: -0.07, z: -0.65}
 --- !u!102 &1209336832
 TextMesh:
   serializedVersion: 3
@@ -5376,8 +5376,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 468.43, y: 130.50061, z: 95.63869}
-  m_Center: {x: -170.8, y: 62.353443, z: 0.000019073486}
+  m_Size: {x: 455.73, y: 130.50061, z: 95.63869}
+  m_Center: {x: -237.73, y: 62.353443, z: -261.4}
 --- !u!1001 &1251706847
 Prefab:
   m_ObjectHideFlags: 0
@@ -8166,6 +8166,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e765bff9b44cde4a99c4abf4e764a5b, type: 3}
+      propertyPath: m_TagString
+      value: trashcan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e765bff9b44cde4a99c4abf4e764a5b, type: 3}
   m_IsPrefabParent: 0
@@ -8517,8 +8521,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74, y: 0.67, z: 0.18}
-  m_Center: {x: -0.2940005, y: 0.13800192, z: -0.00000026416782}
+  m_Size: {x: 0.16, y: 0.11, z: 0.18}
+  m_Center: {x: -0.07, y: 0.02, z: -0.00000026416782}
 --- !u!102 &1874282618
 TextMesh:
   serializedVersion: 3
