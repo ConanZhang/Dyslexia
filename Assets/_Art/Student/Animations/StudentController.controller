@@ -113,7 +113,7 @@ AnimatorState:
   m_PrefabInternal: {fileID: 0}
   m_Name: Read
   m_Speed: 1
-  m_CycleOffset: 0
+  m_CycleOffset: 0.46
   m_Transitions:
   - {fileID: 1101019266659587362}
   m_StateMachineBehaviours: []
