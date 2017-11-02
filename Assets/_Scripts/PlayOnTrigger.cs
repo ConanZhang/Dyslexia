@@ -31,7 +31,7 @@ public class PlayOnTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (director.time > 75 && !press)
+        if (director.time > 70 && !press)
         {
             director.Pause();
             floatingText.gameObject.SetActive(true);
