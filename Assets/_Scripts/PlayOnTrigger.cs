@@ -9,6 +9,7 @@ public class PlayOnTrigger : MonoBehaviour
     // Use this for initialization
     PlayableDirector director;
     bool press = false;
+    public int count = 0;
     void Start()
     {
         director = gameObject.GetComponent<PlayableDirector>();
@@ -18,7 +19,15 @@ public class PlayOnTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (director.time > 75 && !press)
+            director.Pause();
+        
 
+        if (count == 4)
+        {
+            press = true;
+            director.Resume();
+        }
     }
 
     public void Resume()
