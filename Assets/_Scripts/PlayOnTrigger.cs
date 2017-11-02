@@ -15,22 +15,22 @@ public class PlayOnTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //director.Pause();
-        print(Time.time);
-        if (Time.time > 14 && ! press)
-        {
-            director.Pause();
-        }
+        //print(Time.time);
 
-        if (Input.GetKey(KeyCode.Space) && !press)
+        if (Input.GetKey(KeyCode.Space))// && !press)
         {
             print("presds");
             press = true;
             director.Resume();
         }
-    }
 
-    void Play()  {
-        director.Play();
+        if (Time.time > 14 && ! press)
+        {
+            director.Pause();
+        }
+
+
+        
     }
 }
 
