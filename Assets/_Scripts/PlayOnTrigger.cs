@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine.Playables;
 using UnityEngine;
 
-public class PlayOnTrigger : MonoBehaviour {
+public class PlayOnTrigger : MonoBehaviour
+{
 
     // Use this for initialization
     PlayableDirector director;
     bool press = false;
-	void Start () {
+    void Start()
+    {
         director = gameObject.GetComponent<PlayableDirector>();
         Pause();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
     }
 
@@ -28,4 +31,3 @@ public class PlayOnTrigger : MonoBehaviour {
         director.Pause();
     }
 }
-
