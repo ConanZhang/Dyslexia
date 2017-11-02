@@ -42,7 +42,7 @@ public class PlayOnTrigger : MonoBehaviour
             floatingText5.gameObject.SetActive(true);
         }
 
-        if (count == 4)
+        if (count == 1)
         {
             press = true;
             director.Resume();

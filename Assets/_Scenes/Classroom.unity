@@ -1320,7 +1320,7 @@ Prefab:
     - target: {fileID: 102217176384426170, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: m_Text
-      value: Opportunity
+      value: Quickly
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
@@ -10589,12 +10589,12 @@ Prefab:
     - target: {fileID: 102217176384426170, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: m_Text
-      value: Sporadically
+      value: Mechanically
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
@@ -13748,12 +13748,12 @@ Prefab:
     - target: {fileID: 102217176384426170, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: m_Text
-      value: Periodically
+      value: Sparingly
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
@@ -16271,12 +16271,12 @@ Prefab:
     - target: {fileID: 102217176384426170, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: m_Text
-      value: Intermittently
+      value: Lazily
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114242887851626270, guid: 31709a4e9163f3f48b19c5b5aee1ad2d,
         type: 2}
