@@ -27,9 +27,8 @@ public class PlayOnTrigger : MonoBehaviour {
         if (Time.time > 14 && ! press)
         {
             director.Pause();
+           // print(director.GetComponent<AudioSource>());
         }
-
-
         
     }
 }
