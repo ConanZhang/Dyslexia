@@ -10,6 +10,8 @@ public class FadeManager : MonoBehaviour {
 
     public Transform player;
 
+    public GameObject titlePlane;
+
 	// Use this for initialization
 	void Start () {
         headsetFade = GetComponent<VRTK_HeadsetFade>();
@@ -29,6 +31,7 @@ public class FadeManager : MonoBehaviour {
         {
             player.position = new Vector3(0, 0, 0);
             headsetFade.Unfade(3);
+            titlePlane.SetActive(false);
         }
 	}
 
