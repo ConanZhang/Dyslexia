@@ -9,7 +9,7 @@ public class FloatingText : MonoBehaviour {
 
     public Vector3 center;
     public float radius;
-    Rigidbody rigidbody;
+    public Rigidbody rigidbody;
     public PlayOnTrigger playOnTrigger;
 
     // Use this for initialization

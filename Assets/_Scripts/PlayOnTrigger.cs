@@ -10,10 +10,12 @@ public class PlayOnTrigger : MonoBehaviour
     PlayableDirector director;
     bool press = false;
     public int count = 0;
+    public FloatingText floatingText;
     void Start()
     {
         director = gameObject.GetComponent<PlayableDirector>();
         Pause();
+        floatingText.GetComponent<Rigidbody>().transform.localScale = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -21,7 +23,9 @@ public class PlayOnTrigger : MonoBehaviour
     {
         if (director.time > 75 && !press)
             director.Pause();
-        
+
+        if (director.time > 15 && !press)
+            floatingText.GetComponent<Rigidbody>().transform.localScale = new Vector3 (1, 1, 1);
 
         if (count == 4)
         {
