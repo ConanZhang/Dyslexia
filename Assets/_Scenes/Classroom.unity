@@ -11820,7 +11820,21 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 54953587421305186, guid: ba0300507a24a9441bccd3722928fde2,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114490554211372502, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114949638450879810, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114916324867596890, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114412797037963824, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114755936677503862, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114501108753722560, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114281750127143630, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114277205727964040, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
+    - {fileID: 114128392248371214, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ba0300507a24a9441bccd3722928fde2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1264927906
