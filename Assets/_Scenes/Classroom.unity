@@ -6859,7 +6859,7 @@ PlayableDirector:
     value: {fileID: 1587373186}
   - key: {fileID: 0}
     value: {fileID: 1587373186}
-  - key: {fileID: 114779073683951756, guid: 4c553000763ce574eb9d0ed7e4680a91, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 114033649143627944, guid: 4c553000763ce574eb9d0ed7e4680a91, type: 2}
     value: {fileID: 1587373186}
@@ -6867,7 +6867,7 @@ PlayableDirector:
     value: {fileID: 1587373186}
   - key: {fileID: 114834627292025778, guid: 4c553000763ce574eb9d0ed7e4680a91, type: 2}
     value: {fileID: 1587373186}
-  - key: {fileID: 114523099721649240, guid: 4c553000763ce574eb9d0ed7e4680a91, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 114956456623479816, guid: 4c553000763ce574eb9d0ed7e4680a91, type: 2}
     value: {fileID: 0}
