@@ -35,6 +35,11 @@ public class FadeManager : MonoBehaviour {
             titlePlane.SetActive(false);
             playOnTrigger.Resume();
         }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Fade();
+        }
 	}
 
     public void Fade()
