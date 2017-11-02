@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using UnityEngine.Playables;
 using UnityEngine;
 
-public class PlayOnTrigger : MonoBehaviour {
+public class PlayOnTrigger : MonoBehaviour
+{
 
     // Use this for initialization
     PlayableDirector director;
     bool press = false;
-	void Start () {
+    public int count = 0;
+    void Start()
+    {
         director = gameObject.GetComponent<PlayableDirector>();
         Pause();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (director.time > 75 && !press)
+            director.Pause();
+        
+
+        if (count == 4)
+        {
+            press = true;
+            director.Resume();
+        }
     }
 
     public void Resume()
@@ -28,4 +40,3 @@ public class PlayOnTrigger : MonoBehaviour {
         director.Pause();
     }
 }
-

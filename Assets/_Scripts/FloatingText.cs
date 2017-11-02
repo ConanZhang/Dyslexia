@@ -10,9 +10,10 @@ public class FloatingText : MonoBehaviour {
     public Vector3 center;
     public float radius;
     Rigidbody rigidbody;
+    public PlayOnTrigger playOnTrigger;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rigidbody = GetComponent<Rigidbody>();
         GetComponent<VRTK_InteractableObject>().InteractableObjectGrabbed += new InteractableObjectEventHandler(OnGrab);
 	}
@@ -37,6 +38,7 @@ public class FloatingText : MonoBehaviour {
         if(isCorrect)
         {
             Debug.Log("Correct!");
+            playOnTrigger.count++;
         }
     }
 }
