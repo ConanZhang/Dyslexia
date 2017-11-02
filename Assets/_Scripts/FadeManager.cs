@@ -11,6 +11,7 @@ public class FadeManager : MonoBehaviour {
     public Transform player;
 
     public GameObject titlePlane;
+    public PlayOnTrigger playOnTrigger;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +33,7 @@ public class FadeManager : MonoBehaviour {
             player.position = new Vector3(0, 0, 0);
             headsetFade.Unfade(3);
             titlePlane.SetActive(false);
+            playOnTrigger.Resume();
         }
 	}
 

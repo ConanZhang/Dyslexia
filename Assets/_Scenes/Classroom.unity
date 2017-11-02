@@ -11640,6 +11640,11 @@ Prefab:
       propertyPath: titlePlane
       value: 
       objectReference: {fileID: 2116154850}
+    - target: {fileID: 114529692279464632, guid: f332a55c5f533154d9e42a123ab9d63b,
+        type: 2}
+      propertyPath: playOnTrigger
+      value: 
+      objectReference: {fileID: 1485493495}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
   m_IsPrefabParent: 0
