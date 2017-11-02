@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17999971, g: 0.2203407, b: 0.27766064, a: 1}
+  m_IndirectSpecularColor: {r: 0.17999917, g: 0.22034028, b: 0.2776605, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -9652,6 +9652,58 @@ Prefab:
       propertyPath: fadeManager
       value: 
       objectReference: {fileID: 1184897472}
+    - target: {fileID: 114662802949633866, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a29053a8a3da4043a70efe913b5529d,
+        type: 3}
+    - target: {fileID: 114662802949633866, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607410269840586, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114662802949633866, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114247244293884612, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037990554544268, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1aea4d2f36db3a842b99c2aa8ad593e4,
+        type: 3}
+    - target: {fileID: 114037990554544268, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114820250821206236, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037990554544268, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972433598323148, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2be50f6f2ae85d047ba4e29622325c2a, type: 2}
   m_IsPrefabParent: 0
@@ -10378,6 +10430,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1034965111 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1529807058320634, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 978128272}
+--- !u!95 &1034965116
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034965111}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 689593ba0b9eb8c4da3685deb38b057c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1050071459 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1145876505362092, guid: 18d27efcb5cc90a4c8997f573a01c348,
@@ -10525,6 +10599,28 @@ Prefab:
     - {fileID: 65204792225214688, guid: 31709a4e9163f3f48b19c5b5aee1ad2d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 31709a4e9163f3f48b19c5b5aee1ad2d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1074439242 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1978037322396920, guid: 2be50f6f2ae85d047ba4e29622325c2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 978128272}
+--- !u!95 &1074439244
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074439242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2b8da28b63cfdc4abf48b012bfffe22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1098406390
 GameObject:
   m_ObjectHideFlags: 0
