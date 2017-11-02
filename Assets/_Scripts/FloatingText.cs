@@ -22,6 +22,7 @@ public class FloatingText : MonoBehaviour {
             rigidbody.velocity = Vector3.Reflect(rigidbody.velocity, center - transform.position);
             rigidbody.position = center + (transform.position - center).normalized * radius * 0.999f;
         }
+        rigidbody.AddForce(Random.Range(0, 2), Random.Range(0, 2), Random.Range(0, 2));
 	}
 
     void OnDrawGizmosSelected() {
