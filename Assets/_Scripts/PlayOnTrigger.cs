@@ -11,21 +11,36 @@ public class PlayOnTrigger : MonoBehaviour
     bool press = false;
     public int count = 0;
     public FloatingText floatingText;
+    public FloatingText floatingText1;
+    public FloatingText floatingText2;
+    public FloatingText floatingText3;
+    public FloatingText floatingText4;
+    public FloatingText floatingText5;
     void Start()
     {
         director = gameObject.GetComponent<PlayableDirector>();
         Pause();
-        floatingText.GetComponent<Rigidbody>().transform.localScale = new Vector3(0, 0, 0);
+        floatingText.gameObject.SetActive(false);
+        floatingText1.gameObject.SetActive(false);
+        floatingText2.gameObject.SetActive(false);
+        floatingText3.gameObject.SetActive(false);
+        floatingText4.gameObject.SetActive(false);
+        floatingText5.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (director.time > 75 && !press)
+        {
             director.Pause();
-
-        if (director.time > 15 && !press)
-            floatingText.GetComponent<Rigidbody>().transform.localScale = new Vector3 (1, 1, 1);
+            floatingText.gameObject.SetActive(true);
+            floatingText1.gameObject.SetActive(true);
+            floatingText2.gameObject.SetActive(true);
+            floatingText3.gameObject.SetActive(true);
+            floatingText4.gameObject.SetActive(true);
+            floatingText5.gameObject.SetActive(true);
+        }
 
         if (count == 4)
         {
