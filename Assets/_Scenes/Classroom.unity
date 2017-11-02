@@ -567,6 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b342e4fcbd9d944e9bb410aba5f93c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeManager: {fileID: 1184897472}
 --- !u!1001 &39201759
 Prefab:
   m_ObjectHideFlags: 0
@@ -11824,6 +11825,59 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e4c27ccf03fce8243ab1c3129023e871, type: 3}
   m_PrefabInternal: {fileID: 1168429640}
+--- !u!1001 &1184897471
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.17019868
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.07148409
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.9339237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333027006523596, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114529692279464632, guid: f332a55c5f533154d9e42a123ab9d63b,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2135800802}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f332a55c5f533154d9e42a123ab9d63b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1184897472 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114529692279464632, guid: f332a55c5f533154d9e42a123ab9d63b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1184897471}
+  m_Script: {fileID: 11500000, guid: 7abdd0af02514d04f9e3a7e2b3279f85, type: 3}
 --- !u!1001 &1208054855
 Prefab:
   m_ObjectHideFlags: 0

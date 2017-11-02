@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TitleMenu : MonoBehaviour {
-
+    public FadeManager fadeManager;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,7 +16,7 @@ public class TitleMenu : MonoBehaviour {
 
     public void Play()
     {
-
+        fadeManager.Fade();
     }
 
     public void Exit()
