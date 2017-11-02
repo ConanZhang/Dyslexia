@@ -8,6 +8,7 @@ public class PlayOnTrigger : MonoBehaviour
 
     // Use this for initialization
     PlayableDirector director;
+    public FadeManager fadeManager;
     bool press = false;
     public int count = 0;
     public FloatingText floatingText;
@@ -47,6 +48,12 @@ public class PlayOnTrigger : MonoBehaviour
             press = true;
             director.Resume();
         }
+
+        if(director.time > 90)
+        {
+            fadeManager.Fade();
+        }
+
     }
 
     public void Resume()

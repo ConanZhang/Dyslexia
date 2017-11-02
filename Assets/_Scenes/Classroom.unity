@@ -13235,6 +13235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4081c5f0f5ddea74694c52b3af094424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeManager: {fileID: 1184897472}
   count: 0
   floatingText: {fileID: 1313534862}
   floatingText1: {fileID: 1176824040}
