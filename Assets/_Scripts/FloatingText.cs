@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
 
 public class FloatingText : MonoBehaviour {
 
@@ -13,6 +14,7 @@ public class FloatingText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rigidbody = GetComponent<Rigidbody>();
+        GetComponent<VRTK_InteractableObject>().InteractableObjectGrabbed += new InteractableObjectEventHandler(OnGrab);
 	}
 	
 	// Update is called once per frame
@@ -28,5 +30,13 @@ public class FloatingText : MonoBehaviour {
     void OnDrawGizmosSelected() {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(center, radius);
+    }
+
+    void OnGrab(object sender, InteractableObjectEventArgs e)
+    {
+        if(isCorrect)
+        {
+            Debug.Log("Correct!");
+        }
     }
 }
