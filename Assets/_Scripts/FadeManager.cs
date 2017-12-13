@@ -41,7 +41,7 @@ public class FadeManager : MonoBehaviour {
 
             if(fadeCount >= 2)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
 
